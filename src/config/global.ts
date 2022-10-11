@@ -1,4 +1,5 @@
 import { GlobalConfig } from '@eui/core';
+import { LocaleServiceConfig } from '@eui/core';
 
 export const GLOBAL: GlobalConfig = {
     appTitle: 'CSDR-app',
@@ -8,17 +9,8 @@ export const GLOBAL: GlobalConfig = {
             languages: ['en', 'fr'],
         },
         i18nLoader: {
-            i18nFolders: ['i18n'],
-            i18nResources: [{
-                prefix: 'other-assets/i18n/',
-                suffix: '.json',
-           }],
+            i18nFolders: ['i18n-eui', 'i18n', 'i18n-ecl'],
         },
     },
-    user: {
-        defaultUserPreferences: {
-            dashboard: { },
-            lang: 'en',
-        },
-    },
-};
+   
+   };
